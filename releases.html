@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Releases & Insights | PROMY D.I.</title>
+    <meta name="description" content="Read my publications, articles, and reviews on translation trends and evolution of localization practices.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="logo-link">
+                <span class="logo-accent">PROMY</span> D.I.
+            </a>
+            <nav class="nav-menu" id="navigation-menu">
+                <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                <a href="services.html" class="nav-link" id="nav-services">Services</a>
+                <a href="tools.html" class="nav-link" id="nav-tools">Tools</a>
+                <a href="releases.html" class="nav-link active" id="nav-releases">Releases</a>
+                <a href="about.html" class="nav-link" id="nav-about">About</a>
+                <a href="contact.html" class="nav-link btn-nav" id="nav-contact">Contact</a>
+                <div class="lang-switch">
+                    <a href="releases.html" class="lang-link active">EN</a>
+                    <a href="fr/releases.html" class="lang-link">FR</a>
+                    <a href="ln/releases.html" class="lang-link">LN</a>
+                </div>
+            </nav>
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <span class="section-subtitle">Articles & News</span>
+                <h1>Releases & Trends</h1>
+                <p>Sharing perspectives on translation workflows, AI training annotation, and global localization developments.</p>
+            </div>
+        </header>
+
+        <!-- Releases Construction Placeholder -->
+        <section class="releases-content-section" style="padding-top: 0;">
+            <div class="container">
+                <div class="construction-container" id="under-construction-card">
+                    <span class="construction-icon">🚧</span>
+                    <h2>Insights Page Under Construction</h2>
+                    <p>This page is currently under construction. Please check back later for regular publications, articles, and reviews regarding the translation sector and changing industry trends!</p>
+                    <a href="index.html" class="btn btn-primary">Return Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detailed Navigation Sub-menus Footer -->
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Translation & Localization</a></li>
+                        <li><a href="services.html">Medical & Life Sciences</a></li>
+                        <li><a href="services.html">AI Training & Annotation</a></li>
+                        <li><a href="services.html">Audiovisual & Subtitling</a></li>
+                        <li><a href="services.html">iGaming & Promotional</a></li>
+                        <li><a href="services.html">Language Teaching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="tools.html">Phrase TMS</a></li>
+                        <li><a href="tools.html">memoQ</a></li>
+                        <li><a href="tools.html">Smartcat</a></li>
+                        <li><a href="tools.html">XTM Cloud & Xbench</a></li>
+                        <li><a href="tools.html">Web & OS Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Releases</h4>
+                    <ul>
+                        <li><a href="releases.html">Translation Trends</a></li>
+                        <li><a href="releases.html">Localization Insights</a></li>
+                        <li><a href="releases.html">Industry Evolution</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">Biography</a></li>
+                        <li><a href="about.html">Languages Grid</a></li>
+                        <li><a href="about.html">Education Timeline</a></li>
+                        <li><a href="about.html">Volunteer Work</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="mailto:devaleuridzala@gmail.com">Send an Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/" target="_blank" rel="noopener">Connect via LinkedIn</a></li>
+                        <li><a href="tel:+242069289768">Call Phone Line</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Promy de Valeur Idzala. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Basic Menu Toggle Script -->
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('navigation-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
