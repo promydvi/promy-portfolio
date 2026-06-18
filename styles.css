@@ -729,11 +729,20 @@ section {
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--text-muted);
+    transition: var(--transition-fast);
 }
 
 .service-card:hover .client-tag {
     color: var(--text-main);
     border-color: rgba(255, 255, 255, 0.12);
+}
+
+a.client-tag:hover {
+    color: var(--accent-light) !important;
+    border-color: var(--accent) !important;
+    background: var(--accent-glow);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
 }
 
 /* ==========================================================================
