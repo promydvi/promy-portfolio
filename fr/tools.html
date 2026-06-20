@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
+﻿<!DOCTYPE html>
+<html lang="fr-fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Outils & Logiciels | Promy De Valeur Idzala</title>
+    <title>Outils de travail</title>
     <meta name="description"
-        content="Découvrez l'environnement technologique de Promy De Valeur Idzala. Maîtrise avancée des outils de TAO (Phrase, memoQ, Smartcat, XTM) et des logiciels d'assurance qualité pour des traductions optimales.">
+        content="Logiciels de traduction professionnels, outils de TAO, systèmes d'exploitation et utilitaires web que j'utilise dans mon travail de traduction.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,26 +21,15 @@
     <!-- Header / Navigation -->
     <header class="header" id="main-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo" id="logo-link">
-                <span class="logo-accent">PROMY</span> DE VALEUR IDZALA
-            </a>
+            <a href="index.html" class="logo" id="logo-link"> <span class="logo-accent">PROMY</span> DE VALEUR IDZALA </a>
             <nav class="nav-menu" id="navigation-menu">
-                <a href="index.html" class="nav-link" id="nav-home">Accueil</a>
-                <a href="services.html" class="nav-link" id="nav-services">Services</a>
-                <a href="tools.html" class="nav-link active" id="nav-tools">Outils</a>
-                <a href="releases.html" class="nav-link" id="nav-releases">Publications</a>
-                <a href="about.html" class="nav-link" id="nav-about">À propos</a>
-                <a href="contact.html" class="nav-link btn-nav" id="nav-contact">Contact</a>
+                <a href="index.html" class="nav-link" id="nav-home">Accueil</a> <a href="services.html" class="nav-link" id="nav-services">Services</a> <a href="tools.html" class="nav-link active" id="nav-tools">Outils</a> <a href="releases.html" class="nav-link" id="nav-releases">Publications</a> <a href="about.html" class="nav-link" id="nav-about">A propos</a> <a href="contact.html" class="nav-link btn-nav" id="nav-contact">Contact</a>
                 <div class="lang-switch">
-                    <a href="../tools.html" class="lang-link">EN</a>
-                    <a href="tools.html" class="lang-link active">FR</a>
-                    <a href="../ln/tools.html" class="lang-link">LN</a>
+                    <a href="tools.html" class="lang-link active">EN</a> <a href="fr/tools.html" class="lang-link">FR</a> <a href="ln/tools.html" class="lang-link">LN</a>
                 </div>
             </nav>
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Basculer le menu de navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
             </button>
         </div>
     </header>
@@ -50,155 +39,106 @@
         <header class="page-header">
             <div class="container">
                 <span class="section-subtitle">Environnement Technologique</span>
-                <h1>Outils & Technologies de TAO</h1>
-                <p>Une intégration transparente au sein de vos écosystèmes linguistiques grâce à l'utilisation experte
-                    des principaux systèmes de gestion de traduction du marché.</p>
+                <h1>Outils &amp; Technologies de TAO</h1>
+                <p>Utilisation de logiciels de traduction assistée par ordinateur (TAO) et de plateformes OS/web conformes aux normes de l'industrie pour garantir la cohérence et une livraison rapide.</p>
             </div>
         </header>
 
-        <!-- Tools Grid Section -->
-        <section class="tools-page-section" style="padding-top: 0;">
+        <!-- Tools Content -->
+        <section class="tools-content-section" style="padding-top: 0;">
             <div class="container">
-                <div class="tools-grid-layout"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+                <div class="tools-grid" id="tools-category-grid">
 
-                    <!-- Tool 1: Phrase -->
-                    <div class="tool-tech-card"
-                        style="background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); padding: 2.2rem; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
-                                <span style="font-size: 2rem;">☁️</span>
-                                <h3 style="font-size: 1.4rem; margin: 0;">Phrase TMS (Memsource)</h3>
-                            </div>
-                            <p
-                                style="line-height: 1.6; color: var(--text-color, #334155); font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Maîtrise approfondie de cet environnement cloud pour la gestion de projets de
-                                localisation à grande échelle. Utilisation intensive des mémoires de traduction (TM),
-                                gestion de bases terminologiques (TB) et exécution de tâches de post-édition de
-                                traduction automatique (MTPE).
-                            </p>
+                    <!-- Tool Card 1 -->
+                    <div class="tool-category-card" id="cat-tools-card">
+                        <div class="tool-category-header">
+                            <svg class="icon icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z" />
+                            </svg>
+                            <h3>Outils de traduction assistée par ordinateur</h3>
                         </div>
-                        <span
-                            style="background: #f1f5f9; color: #475569; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; align-self: flex-start;">Système
-                            de Gestion Cloud (TMS)</span>
+                        <ul class="tool-list">
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">Phrase TMS</span> <span class="tool-status">Usage quotidien / Expert</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 95%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">memoQ</span> <span class="tool-status">Expert</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 95%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">Smartcat</span> <span class="tool-status">Expert</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 95%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">XTM Cloud &amp; Xbench</span> <span class="tool-status">Assurance qualité</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Tool 2: memoQ -->
-                    <div class="tool-tech-card"
-                        style="background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); padding: 2.2rem; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
-                                <span style="font-size: 2rem;">🖥️</span>
-                                <h3 style="font-size: 1.4rem; margin: 0;">memoQ</h3>
-                            </div>
-                            <p
-                                style="line-height: 1.6; color: var(--text-color, #334155); font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Exploitation avancée de memoQ pour les projets de traduction exigeant une gestion
-                                terminologique stricte, notamment dans les secteurs des sciences de la vie et de la
-                                médecine. Parfaite maîtrise de l'alignement de textes et du contrôle qualité intégré.
-                            </p>
+                    <!-- Tool Card 2 -->
+                    <div class="tool-category-card" id="web-os-tools-card">
+                        <div class="tool-category-header">
+                            <svg class="icon icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z" />
+                            </svg>
+                            <h3>Outils Web, OS et de transcription</h3>
                         </div>
-                        <span
-                            style="background: #f1f5f9; color: #475569; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; align-self: flex-start;">Logiciel
-                            TAO Desktop & Serveur</span>
+                        <ul class="tool-list">
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">Subtitle Edit</span> <span class="tool-status">Usage quotidien</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">Conception HTML et CSS</span> <span class="tool-status">Connaissances basique</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 50%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">Environnements Ubuntu/Linux</span> <span class="tool-status">Niveau intermediaire</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 65%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-info">
+                                    <span class="tool-name">Suite Microsoft Office</span> <span class="tool-status">Usage quotidien / Avancé</span>
+                                </div>
+                                <div class="tool-bar-bg">
+                                    <div class="tool-bar-fill" style="width: 100%;"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- Tool 3: Smartcat -->
-                    <div class="tool-tech-card"
-                        style="background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); padding: 2.2rem; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
-                                <span style="font-size: 2rem;">🐱</span>
-                                <h3 style="font-size: 1.4rem; margin: 0;">Smartcat</h3>
-                            </div>
-                            <p
-                                style="line-height: 1.6; color: var(--text-color, #334155); font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Utilisation régulière pour des collaborations agiles en temps réel avec des agences
-                                mondiales. Idéal pour un traitement fluide des formats de fichiers variés et des flux de
-                                travail de révision collaboratifs.
-                            </p>
-                        </div>
-                        <span
-                            style="background: #f1f5f9; color: #475569; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; align-self: flex-start;">Plateforme
-                            Collaborative Cloud</span>
-                    </div>
-
-                    <!-- Tool 4: XTM & Xbench -->
-                    <div class="tool-tech-card"
-                        style="background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); padding: 2.2rem; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
-                                <span style="font-size: 2rem;">🛠️</span>
-                                <h3 style="font-size: 1.4rem; margin: 0;">XTM Cloud & Xbench</h3>
-                            </div>
-                            <p
-                                style="line-height: 1.6; color: var(--text-color, #334155); font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Localisation de contenus d'interfaces utilisateur (UI) et marketing sur XTM. Utilisation
-                                conjointe d'ApSIC Xbench pour mener des contrôles d'assurance qualité (QA) stricts,
-                                traquer les incohérences et certifier des livrables sans faille.
-                            </p>
-                        </div>
-                        <span
-                            style="background: #f1f5f9; color: #475569; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; align-self: flex-start;">Localisation
-                            d'UI & Assurance Qualité</span>
-                    </div>
-
-                    <!-- Tool 5: SDL Trados Studio -->
-                    <div class="tool-tech-card"
-                        style="background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); padding: 2.2rem; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
-                                <span style="font-size: 2rem;">📦</span>
-                                <h3 style="font-size: 1.4rem; margin: 0;">SDL Trados Studio</h3>
-                            </div>
-                            <p
-                                style="line-height: 1.6; color: var(--text-color, #334155); font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Prise en charge et traitement des packages de traduction standard de l'industrie
-                                (.sdlxliff, .sdlppx). Assure une parfaite compatibilité avec les exigences techniques
-                                des agences de traduction traditionnelles.
-                            </p>
-                        </div>
-                        <span
-                            style="background: #f1f5f9; color: #475569; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; align-self: flex-start;">Standard
-                            de l'Industrie</span>
-                    </div>
-
-                    <!-- Tool 6: Web Development & OS -->
-                    <div class="tool-tech-card"
-                        style="background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); padding: 2.2rem; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
-                                <span style="font-size: 2rem;">💻</span>
-                                <h3 style="font-size: 1.4rem; margin: 0;">Développement & Environnement</h3>
-                            </div>
-                            <p
-                                style="line-height: 1.6; color: var(--text-color, #334155); font-size: 0.95rem; margin-bottom: 1.5rem;">
-                                Intégration de flux de travail modernes avec Git, GitHub Desktop et Visual Studio Code.
-                                Capacité à travailler directement au sein de fichiers de code (HTML, JSON, Markdown)
-                                sans altérer les balises ni la structure de programmation.
-                            </p>
-                        </div>
-                        <span
-                            style="background: #f1f5f9; color: #475569; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 500; align-self: flex-start;">Intégration
-                            Web & Technique</span>
-                    </div>
-
                 </div>
-            </div>
-        </section>
-
-        <!-- QA Standards Banner -->
-        <section class="qa-standards-section"
-            style="background: var(--light-bg, #f8fafc); padding: 4rem 0; border-top: 1px solid var(--border-color, #e2e8f0);">
-            <div class="container" style="max-width: 800px; text-align: center;">
-                <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Pourquoi l'utilisation des outils TAO est
-                    essentielle ?</h2>
-                <p style="line-height: 1.7; color: var(--text-color, #334155);">
-                    L'utilisation de ces technologies ne remplace pas la sensibilité humaine, elle l'optimise. Elle me
-                    permet de garantir une **cohérence terminologique absolue** d'un projet à un autre, de réduire
-                    drastiquement les délais de livraison pour les volumes importants et de respecter scrupuleusement la
-                    mise en page native de vos documents.
-                </p>
             </div>
         </section>
     </main>
@@ -210,11 +150,11 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Traduction & Localisation</a></li>
-                        <li><a href="services.html">Médical & Sciences de la vie</a></li>
-                        <li><a href="services.html">iGaming & Contenus promotionnels</a></li>
-                        <li><a href="services.html">Entraînement IA & Annotation</a></li>
-                        <li><a href="services.html">Transcription Audiovisuelle</a></li>
+                        <li><a href="services.html">Traduction &amp; Localisation</a></li>
+                        <li><a href="services.html">Médical &amp; Sciences de la vie</a></li>
+                        <li><a href="services.html">iGaming &amp; Contenus promotionnels</a></li>
+                        <li><a href="services.html">Entraînement IA &amp; Annotation</a></li>
+                        <li><a href="services.html">Transcription audiovisuelle</a></li>
                         <li><a href="services.html">Enseignement des langues</a></li>
                     </ul>
                 </div>
@@ -224,8 +164,8 @@
                         <li><a href="tools.html">Phrase TMS</a></li>
                         <li><a href="tools.html">memoQ</a></li>
                         <li><a href="tools.html">Smartcat</a></li>
-                        <li><a href="tools.html">XTM Cloud & Xbench</a></li>
-                        <li><a href="tools.html">Design Web & OS</a></li>
+                        <li><a href="tools.html">XTM Cloud &amp; Xbench</a></li>
+                        <li><a href="tools.html">OS &amp; Design web</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -237,7 +177,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>À propos</h4>
+                    <h4>A propos</h4>
                     <ul>
                         <li><a href="about.html">Biographie</a></li>
                         <li><a href="about.html">Grille des langues</a></li>
@@ -250,14 +190,13 @@
                     <ul>
                         <li><a href="contact.html">Prendre contact</a></li>
                         <li><a href="mailto:devaleuridzala@gmail.com">Envoyer un e-mail</a></li>
-                        <li><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/" target="_blank"
-                                rel="noopener">Se connecter via LinkedIn</a></li>
+                        <li><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/" target="_blank" rel="noopener">Se connecter via LinkedIn</a></li>
                         <li><a href="tel:+242069289768">Appeler la ligne téléphonique</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Promy De Valeur Idzala. Tous droits réservés.</p>
+                <p>© 2026 Promy De Valeur Idzala. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
