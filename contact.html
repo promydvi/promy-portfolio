@@ -105,38 +105,48 @@
 
                     <!-- Contact Form -->
                     <div class="contact-form-wrapper" id="form-wrapper">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form"
-                            id="main-contact-form">
-                            <!-- Web3Forms Integration -->
-                            <input type="hidden" name="access_key" value="1b08c22d-5857-4b8c-8a50-6b41b44a6fc1">
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="form-title-container">
+                            <h3 class="form-title" id="contact-form-title">Send a message</h3>
+                            <p class="form-subtitle" id="contact-form-subtitle">Fill in the form below to request a
+                                quote or discuss a potential collaboration.</p>
+                        </div>
+                        <div>
+                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form"
+                                id="main-contact-form">
+                                <!-- Web3Forms Integration -->
+                                <input type="hidden" name="access_key" value="1b08c22d-5857-4b8c-8a50-6b41b44a6fc1">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="form-name">Full Name</label>
-                                    <input type="text" id="form-name" name="name"
-                                        placeholder="Please type your name here" required>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="form-name">Full Name</label>
+                                        <input type="text" id="form-name" name="name"
+                                            placeholder="Please type your name here" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email">Email Address</label>
+                                        <input type="email" id="form-email" name="email"
+                                            placeholder="Please enter your email address" required>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="form-email">Email Address</label>
-                                    <input type="email" id="form-email" name="email"
-                                        placeholder="Please enter your email address" required>
+                                    <label for="form-subject">Requested Service</label>
+                                    <select id="form-subject" name="subject">
+                                        <option value="translation">Translation & Localization</option>
+                                        <option value="proofreading">MTPE or Proofreading</option>
+                                        <option value="transcription">Audiovisual Transcription</option>
+                                        <option value="other">Other collaboration request</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-subject">Subject</label>
-                                <input type="text" id="form-subject" name="subject"
-                                    placeholder="Project Inquiry / Localization Request" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-message">Message</label>
-                                <textarea id="form-message" name="message" rows="6"
-                                    placeholder="Describe your translation or localization requirements..."
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-button">Send
-                                Message</button>
-                        </form>
+                                <div class="form-group">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" name="message" rows="6"
+                                        placeholder="Please describe your service requirements..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block" id="form-submit-button">Send
+                                    Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
