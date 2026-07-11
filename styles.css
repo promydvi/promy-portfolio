@@ -5,16 +5,21 @@
 /* 1. Global Reset & Theme Variables */
 :root {
     /* Color Palette - Brightened Blue-Slate */
-    --background: #131b2e;       /* Clearer deep blue-slate */
-    --background-accent: #192239;/* Slightly lighter blue-slate accent */
-    --card-bg: #1e2942;          /* Slate-800 equivalent but bluer */
+    --background: #131b2e;
+    /* Clearer deep blue-slate */
+    --background-accent: #192239;
+    /* Slightly lighter blue-slate accent */
+    --card-bg: #1e2942;
+    /* Slate-800 equivalent but bluer */
     --card-bg-glass: rgba(30, 41, 66, 0.55);
-    
-    --primary: #6366f1;       /* Indigo */
+
+    --primary: #6366f1;
+    /* Indigo */
     --primary-light: #818cf8;
     --primary-glow: rgba(99, 102, 241, 0.15);
-    
-    --accent: #10b981;        /* Emerald/Teal */
+
+    --accent: #10b981;
+    /* Emerald/Teal */
     --accent-light: #34d399;
     --accent-glow: rgba(16, 185, 129, 0.15);
 
@@ -29,7 +34,7 @@
 
     /* Font Hierarchy */
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    
+
     /* Layout & Shadows */
     --max-width: 1200px;
     --radius-sm: 6px;
@@ -38,7 +43,7 @@
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    
+
     /* Transitions */
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -272,7 +277,8 @@ section {
     padding: 0.5rem 0;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--text-main);
 }
 
@@ -287,7 +293,8 @@ section {
     transition: var(--transition-normal);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -329,7 +336,8 @@ section {
     transition: var(--transition-fast);
 }
 
-.lang-link:hover, .lang-link.active {
+.lang-link:hover,
+.lang-link.active {
     color: var(--text-main);
     background: var(--primary-glow);
 }
@@ -345,7 +353,7 @@ section {
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .lang-link {
         font-size: 1rem;
         padding: 0.5rem 1rem;
@@ -504,7 +512,7 @@ section {
 .about-profile-header {
     display: flex;
     gap: 2.5rem;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2rem;
 }
 
@@ -566,9 +574,17 @@ section {
     border-radius: 50%;
 }
 
-.visual-card .red { background-color: #ef4444; }
-.visual-card .yellow { background-color: #f59e0b; }
-.visual-card .green { background-color: #10b981; }
+.visual-card .red {
+    background-color: #ef4444;
+}
+
+.visual-card .yellow {
+    background-color: #f59e0b;
+}
+
+.visual-card .green {
+    background-color: #10b981;
+}
 
 .visual-card .file-name {
     margin-left: 0.75rem;
@@ -588,8 +604,13 @@ section {
     overflow-x: auto;
 }
 
-.code-key { color: var(--accent-light); }
-.code-val { color: #facc15; }
+.code-key {
+    color: var(--accent-light);
+}
+
+.code-val {
+    color: #facc15;
+}
 
 /* Floating badges in visual */
 .floating-badge {
@@ -626,9 +647,17 @@ section {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-8px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* ==========================================================================
@@ -838,7 +867,8 @@ a.client-tag:hover {
     margin-bottom: 2rem;
 }
 
-.profile-details-card h3, .languages-card h3 {
+.profile-details-card h3,
+.languages-card h3 {
     font-size: 1.35rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -1078,9 +1108,20 @@ a.client-tag:hover {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); opacity: 0.8; }
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
 }
 
 .construction-container h2 {
@@ -1196,7 +1237,8 @@ a.client-tag:hover {
     color: var(--text-muted);
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     background: rgba(15, 23, 42, 0.5);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
@@ -1207,11 +1249,13 @@ a.client-tag:hover {
     transition: var(--transition-normal);
 }
 
-.form-group input::placeholder, .form-group textarea::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
     color: rgba(148, 163, 184, 0.4);
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     outline: none;
     border-color: var(--primary-light);
     box-shadow: 0 0 10px rgba(99, 102, 241, 0.15);
@@ -1292,13 +1336,13 @@ a.client-tag:hover {
     .container {
         padding: 0 1.5rem;
     }
-    
+
     .hero-container {
         grid-template-columns: 1fr;
         gap: 3rem;
         text-align: center;
     }
-    
+
     .hero-content {
         max-width: 100%;
         margin: 0 auto;
@@ -1315,7 +1359,7 @@ a.client-tag:hover {
     .hero-visual {
         margin-top: 1rem;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -1325,7 +1369,7 @@ a.client-tag:hover {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
@@ -1341,7 +1385,7 @@ a.client-tag:hover {
     .section-title {
         font-size: 1.85rem;
     }
-    
+
     /* Navigation layout changes to hamburger drawer */
     .mobile-nav-toggle {
         display: flex;
@@ -1389,7 +1433,7 @@ a.client-tag:hover {
     .mobile-nav-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .tools-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1402,7 +1446,7 @@ a.client-tag:hover {
     .contact-form-wrapper {
         padding: 2rem;
     }
-    
+
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1449,10 +1493,11 @@ a.client-tag:hover {
         padding: 1.75rem;
     }
 
-    .profile-details-card, .languages-card {
+    .profile-details-card,
+    .languages-card {
         padding: 1.75rem;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
