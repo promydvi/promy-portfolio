@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,9 +32,15 @@
                 <a href="about.html" class="nav-link active" id="nav-about">About</a>
                 <a href="contact.html" class="nav-link btn-nav" id="nav-contact">Contact</a>
                 <div class="lang-switch">
-                    <a href="about.html" class="lang-link active">EN</a>
-                    <a href="fr/about.html" class="lang-link">FR</a>
-                    <a href="ln/about.html" class="lang-link">LN</a>
+                    <a href="about.html" class="lang-link active" title="English (US/UK)">
+                        <img src="https://flagcdn.com/us.svg" alt="EN" class="flag-icon">
+                    </a>
+                    <a href="fr/about.html" class="lang-link" title="French">
+                        <img src="https://flagcdn.com/fr.svg" alt="FR" class="flag-icon">
+                    </a>
+                    <a href="ln/about.html" class="lang-link" title="Lingala">
+                        <img src="https://flagcdn.com/cg.svg" alt="LN" class="flag-icon">
+                    </a>
                 </div>
             </nav>
             <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
@@ -58,35 +65,58 @@
         <section class="about-content-section" style="padding-top: 0;">
             <div class="container">
                 <!-- Intro Profile (Photo + Main Pitch) -->
-                <div class="about-profile-header" style="display: flex; gap: 3rem; align-items: flex-start; margin-bottom: 4rem;">
+                <div class="about-profile-header"
+                    style="display: flex; gap: 3rem; align-items: flex-start; margin-bottom: 4rem;">
                     <div class="about-image-wrapper" style="flex: 0 0 220px;">
-                        <img src="profile.jpg" alt="Promy de Valeur Idzala" class="about-profile-img" style="width: 100%; border-radius: 8px;">
+                        <img src="profile.jpg" alt="Promy de Valeur Idzala" class="about-profile-img"
+                            style="width: 100%; border-radius: 8px;">
                     </div>
                     <div class="profile-details-card" id="profile-text-card" style="flex: 1;">
-                        <h2 style="color: #ffffff; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.8rem; text-align: center;">Beyond Mechanical Translation</h2>
+                        <h2
+                            style="color: #ffffff; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.8rem; text-align: center;">
+                            Beyond Mechanical Translation</h2>
                         <div style="font-size: 1.05rem; line-height: 1.7; color: #b3b9c9; text-align: justify;">
-                            <p>I am an adaptable and detail-oriented linguist who bridges the gap between different cultures through high-quality translation and localization. My background in journalism combined with my academic training in foreign languages and literature gives me a unique advantage: I don't just translate words; I capture context, voice, and intent.</p>
-                            <p>Specializing in cross-cultural adaptation between English, French, and Lingala, I approach every project—from technical Life Sciences data to Fintech algorithms and fast-paced tech UI strings—with identical rigor: precise, natural, and highly contextual.</p>
+                            <p>I am an adaptable and detail-oriented linguist who bridges the gap between different
+                                cultures through high-quality translation and localization. My background in journalism
+                                combined with my academic training in foreign languages and literature gives me a unique
+                                advantage: I don't just translate words; I capture context, voice, and intent.</p>
+                            <p>Specializing in cross-cultural adaptation between English, French, and Lingala, I
+                                approach every project—from technical Life Sciences data to Fintech algorithms and
+                                fast-paced tech UI strings—with identical rigor: precise, natural, and highly
+                                contextual.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Core Expertise Pillars: Highlighting professional strengths instead of raw resume listings -->
-                <div class="philosophy-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 5rem; text-align: center;">
-                    <div class="philosophy-card" style="background-color: #121824; padding: 30px; border-radius: 8px; border: 1px solid #1f293d;">
+                <div class="philosophy-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 5rem; text-align: center;">
+                    <div class="philosophy-card"
+                        style="background-color: #121824; padding: 30px; border-radius: 8px; border: 1px solid #1f293d;">
                         <div style="font-size: 2.25rem; margin-bottom: 15px;">🎯</div>
-                        <h4 style="color: #ffffff; font-size: 1.2rem; margin: 0 0 10px 0; font-weight: 700;">Journalistic Precision</h4>
-                        <p style="color: #b3b9c9; font-size: 0.92rem; line-height: 1.6; margin: 0;">My background as a reporter and associate degree in journalism trained me to extract core facts instantly, respect strict technical briefs, and adapt multi-dialect nuances for target audiences.</p>
+                        <h4 style="color: #ffffff; font-size: 1.2rem; margin: 0 0 10px 0; font-weight: 700;">
+                            Journalistic Precision</h4>
+                        <p style="color: #b3b9c9; font-size: 0.92rem; line-height: 1.6; margin: 0;">My background as a
+                            reporter and associate degree in journalism trained me to extract core facts instantly,
+                            respect strict technical briefs, and adapt multi-dialect nuances for target audiences.</p>
                     </div>
-                    <div class="philosophy-card" style="background-color: #121824; padding: 30px; border-radius: 8px; border: 1px solid #1f293d;">
+                    <div class="philosophy-card"
+                        style="background-color: #121824; padding: 30px; border-radius: 8px; border: 1px solid #1f293d;">
                         <div style="font-size: 2.25rem; margin-bottom: 15px;">✍️</div>
-                        <h4 style="color: #ffffff; font-size: 1.2rem; margin: 0 0 10px 0; font-weight: 700;">Literary & Cultural Depth</h4>
-                        <p style="color: #b3b9c9; font-size: 0.92rem; line-height: 1.6; margin: 0;">Holding a Master's degree in English Literature allows me to grasp advanced syntactic structures and deliver high-end transcreation where tone of voice is just as important as the source text.</p>
+                        <h4 style="color: #ffffff; font-size: 1.2rem; margin: 0 0 10px 0; font-weight: 700;">Literary &
+                            Cultural Depth</h4>
+                        <p style="color: #b3b9c9; font-size: 0.92rem; line-height: 1.6; margin: 0;">Holding a Master's
+                            degree in English Literature allows me to grasp advanced syntactic structures and deliver
+                            high-end transcreation where tone of voice is just as important as the source text.</p>
                     </div>
-                    <div class="philosophy-card" style="background-color: #121824; padding: 30px; border-radius: 8px; border: 1px solid #1f293d;">
+                    <div class="philosophy-card"
+                        style="background-color: #121824; padding: 30px; border-radius: 8px; border: 1px solid #1f293d;">
                         <div style="font-size: 2.25rem; margin-bottom: 15px;">🎓</div>
-                        <h4 style="color: #ffffff; font-size: 1.2rem; margin: 0 0 10px 0; font-weight: 700;">Educational Clarity</h4>
-                        <p style="color: #b3b9c9; font-size: 0.92rem; line-height: 1.6; margin: 0;">Years spent teaching foreign languages honed my ability to dissect terminology, manage custom corporate glossaries, and guarantee clear, crystal-clear communication paths.</p>
+                        <h4 style="color: #ffffff; font-size: 1.2rem; margin: 0 0 10px 0; font-weight: 700;">Educational
+                            Clarity</h4>
+                        <p style="color: #b3b9c9; font-size: 0.92rem; line-height: 1.6; margin: 0;">Years spent teaching
+                            foreign languages honed my ability to dissect terminology, manage custom corporate
+                            glossaries, and guarantee clear, crystal-clear communication paths.</p>
                     </div>
                 </div>
 
@@ -134,16 +164,23 @@
                 </div>
 
                 <!-- Skills & Background Overview: Clean layout for trust and compliance verification -->
-                <div class="about-grid" id="about-layout-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 4rem; margin-bottom: 4rem;">
+                <div class="about-grid" id="about-layout-grid"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 4rem; margin-bottom: 4rem;">
 
                     <!-- Left Column: Language Progress Blocks -->
                     <div class="languages-card" id="languages-card-wrapper" style="text-align: center;">
                         <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 1.5rem;">Language Assets</h3>
-                        <div class="language-progress-grid" style="display: grid; gap: 1.5rem; grid-template-columns: 1fr;">
-                            <div class="lang-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
-                                <div class="lang-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                                    <span class="lang-name" style="font-weight: 700; font-size: 1rem; color: #ffffff;">French</span>
-                                    <span class="lang-level" style="color: #4df2b8; font-weight: 600; font-size: 0.8rem; background: rgba(77,242,184,0.1); padding: 2px 8px; border-radius: 4px;">Native Speaker</span>
+                        <div class="language-progress-grid"
+                            style="display: grid; gap: 1.5rem; grid-template-columns: 1fr;">
+                            <div class="lang-item"
+                                style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
+                                <div class="lang-header"
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                    <span class="lang-name"
+                                        style="font-weight: 700; font-size: 1rem; color: #ffffff;">French</span>
+                                    <span class="lang-level"
+                                        style="color: #4df2b8; font-weight: 600; font-size: 0.8rem; background: rgba(77,242,184,0.1); padding: 2px 8px; border-radius: 4px;">Native
+                                        Speaker</span>
                                 </div>
                                 <div class="lang-dots" style="margin-bottom: 10px;">
                                     <span class="dot active"></span>
@@ -152,12 +189,19 @@
                                     <span class="dot active"></span>
                                     <span class="dot active"></span>
                                 </div>
-                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Native language used for high-end corporate translation, localization, transcreation, and final quality proofreading.</p>
+                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Native
+                                    language used for high-end corporate translation, localization, transcreation, and
+                                    final quality proofreading.</p>
                             </div>
-                            <div class="lang-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
-                                <div class="lang-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                                    <span class="lang-name" style="font-weight: 700; font-size: 1rem; color: #ffffff;">English</span>
-                                    <span class="lang-level" style="color: #4facfe; font-weight: 600; font-size: 0.8rem; background: rgba(79,172,254,0.1); padding: 2px 8px; border-radius: 4px;">Fluent Speaker</span>
+                            <div class="lang-item"
+                                style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
+                                <div class="lang-header"
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                    <span class="lang-name"
+                                        style="font-weight: 700; font-size: 1rem; color: #ffffff;">English</span>
+                                    <span class="lang-level"
+                                        style="color: #4facfe; font-weight: 600; font-size: 0.8rem; background: rgba(79,172,254,0.1); padding: 2px 8px; border-radius: 4px;">Fluent
+                                        Speaker</span>
                                 </div>
                                 <div class="lang-dots" style="margin-bottom: 10px;">
                                     <span class="dot active"></span>
@@ -166,12 +210,19 @@
                                     <span class="dot active"></span>
                                     <span class="dot active"></span>
                                 </div>
-                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Primary source language. Expert in analyzing complex terminology files, software strings, financial records, and medical briefs.</p>
+                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Primary
+                                    source language. Expert in analyzing complex terminology files, software strings,
+                                    financial records, and medical briefs.</p>
                             </div>
-                            <div class="lang-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
-                                <div class="lang-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                                    <span class="lang-name" style="font-weight: 700; font-size: 1rem; color: #ffffff;">Lingala</span>
-                                    <span class="lang-level" style="color: #4df2b8; font-weight: 600; font-size: 0.8rem; background: rgba(77,242,184,0.1); padding: 2px 8px; border-radius: 4px;">Native Speaker</span>
+                            <div class="lang-item"
+                                style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
+                                <div class="lang-header"
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                    <span class="lang-name"
+                                        style="font-weight: 700; font-size: 1rem; color: #ffffff;">Lingala</span>
+                                    <span class="lang-level"
+                                        style="color: #4df2b8; font-weight: 600; font-size: 0.8rem; background: rgba(77,242,184,0.1); padding: 2px 8px; border-radius: 4px;">Native
+                                        Speaker</span>
                                 </div>
                                 <div class="lang-dots" style="margin-bottom: 10px;">
                                     <span class="dot active"></span>
@@ -180,12 +231,19 @@
                                     <span class="dot active"></span>
                                     <span class="dot active"></span>
                                 </div>
-                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Native regional language. Specializing in regional adaptation, localization of NGO programs, and audiovisual transcriptions.</p>
+                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Native
+                                    regional language. Specializing in regional adaptation, localization of NGO
+                                    programs, and audiovisual transcriptions.</p>
                             </div>
-                            <div class="lang-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
-                                <div class="lang-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                                    <span class="lang-name" style="font-weight: 700; font-size: 1rem; color: #ffffff;">Spanish</span>
-                                    <span class="lang-level" style="color: #b3b9c9; font-weight: 600; font-size: 0.8rem; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px;">Working Knowledge</span>
+                            <div class="lang-item"
+                                style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 1rem;">
+                                <div class="lang-header"
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                    <span class="lang-name"
+                                        style="font-weight: 700; font-size: 1rem; color: #ffffff;">Spanish</span>
+                                    <span class="lang-level"
+                                        style="color: #b3b9c9; font-weight: 600; font-size: 0.8rem; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px;">Working
+                                        Knowledge</span>
                                 </div>
                                 <div class="lang-dots" style="margin-bottom: 10px;">
                                     <span class="dot active"></span>
@@ -194,12 +252,18 @@
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                 </div>
-                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Additional language capacity, utilized for language coaching and baseline translation cross-references.</p>
+                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Additional
+                                    language capacity, utilized for language coaching and baseline translation
+                                    cross-references.</p>
                             </div>
                             <div class="lang-item">
-                                <div class="lang-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                                    <span class="lang-name" style="font-weight: 700; font-size: 1rem; color: #ffffff;">Russian</span>
-                                    <span class="lang-level" style="color: #b3b9c9; font-weight: 600; font-size: 0.8rem; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px;">Beginner's Level</span>
+                                <div class="lang-header"
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                    <span class="lang-name"
+                                        style="font-weight: 700; font-size: 1rem; color: #ffffff;">Russian</span>
+                                    <span class="lang-level"
+                                        style="color: #b3b9c9; font-weight: 600; font-size: 0.8rem; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px;">Beginner's
+                                        Level</span>
                                 </div>
                                 <div class="lang-dots" style="margin-bottom: 10px;">
                                     <span class="dot active"></span>
@@ -208,7 +272,8 @@
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                 </div>
-                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Fundamental grammatical understanding, currently expanding language skills.</p>
+                                <p style="color: #b3b9c9; font-size: 0.88rem; margin: 0; line-height: 1.5;">Fundamental
+                                    grammatical understanding, currently expanding language skills.</p>
                             </div>
                         </div>
                     </div>
@@ -216,20 +281,34 @@
                     <!-- Right Column: Academic Credentials & Verification -->
                     <div class="about-col-timeline">
                         <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 1.5rem;">Core Credentials</h3>
-                        <p style="color: #b3b9c9; line-height: 1.6; margin-bottom: 1.5rem;">For enterprise review compliance and agency onboarding standards, my technical background rests upon verified regional milestones:</p>
-                        
+                        <p style="color: #b3b9c9; line-height: 1.6; margin-bottom: 1.5rem;">For enterprise review
+                            compliance and agency onboarding standards, my technical background rests upon verified
+                            regional milestones:</p>
+
                         <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem;">
-                            <li style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 6px; border-left: 3px solid #818cf8;">
-                                <strong style="color: #ffffff; display: block;">Master's Degree — English Literature & Civilization</strong>
-                                <span style="color: #717b91; font-size: 0.85rem;">Specialization in English literature and civilization, with a research dissertation on British literature. For your reference, my dissertation is available online.</span>
+                            <li
+                                style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 6px; border-left: 3px solid #818cf8;">
+                                <strong style="color: #ffffff; display: block;">Master's Degree — English Literature &
+                                    Civilization</strong>
+                                <span style="color: #717b91; font-size: 0.85rem;">Specialization in English literature
+                                    and civilization, with a research dissertation on British literature. For your
+                                    reference, my dissertation is available online.</span>
                             </li>
-                            <li style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 6px; border-left: 3px solid #818cf8;">
-                                <strong style="color: #ffffff; display: block;">Bachelor's Degree — Foreign Languages</strong>
-                                <span style="color: #717b91; font-size: 0.85rem;">Comprehensive studies in English, French, and Spanish with an emphasis on translation and language dynamics.</span>
+                            <li
+                                style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 6px; border-left: 3px solid #818cf8;">
+                                <strong style="color: #ffffff; display: block;">Bachelor's Degree — Foreign
+                                    Languages</strong>
+                                <span style="color: #717b91; font-size: 0.85rem;">Comprehensive studies in English,
+                                    French, and Spanish with an emphasis on translation and language dynamics.</span>
                             </li>
-                            <li style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 6px; border-left: 3px solid #34d399;">
-                                <strong style="color: #ffffff; display: block;">Associate's Degree — Journalism & Media</strong>
-                                <span style="color: #717b91; font-size: 0.85rem;">Two-year professional vocational training with a focus on broadcast journalism, media production, and strategic communication. A special training in Congolese local languages, including Lingala and Kituba.</span>
+                            <li
+                                style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 6px; border-left: 3px solid #34d399;">
+                                <strong style="color: #ffffff; display: block;">Associate's Degree — Journalism &
+                                    Media</strong>
+                                <span style="color: #717b91; font-size: 0.85rem;">Two-year professional vocational
+                                    training with a focus on broadcast journalism, media production, and strategic
+                                    communication. A special training in Congolese local languages, including Lingala
+                                    and Kituba.</span>
                             </li>
                         </ul>
                     </div>
@@ -242,17 +321,23 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <span style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; font-size: 0.72rem; font-weight: bold; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Professional Role</span>
+                                <span
+                                    style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; font-size: 0.72rem; font-weight: bold; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Professional
+                                    Role</span>
                                 <h4 class="timeline-title">Foreign Language Teacher</h4>
-                                <p class="timeline-desc">Teaching of English and Spanish as second languages. Designing curricula, conducting exams, and providing targeted language training.</p>
+                                <p class="timeline-desc">Teaching of English and Spanish as second languages. Designing
+                                    curricula, conducting exams, and providing targeted language training.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <span style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; font-size: 0.72rem; font-weight: bold; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Professional Role</span>
+                                <span
+                                    style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; font-size: 0.72rem; font-weight: bold; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Professional
+                                    Role</span>
                                 <h4 class="timeline-title">Journalist & Reporter</h4>
-                                <p class="timeline-desc">Conducted media broadcasting, investigative sports reporting, and managed public communication tasks in multiple languages.</p>
+                                <p class="timeline-desc">Conducted media broadcasting, investigative sports reporting,
+                                    and managed public communication tasks in multiple languages.</p>
                             </div>
                         </div>
                     </div>
@@ -380,4 +465,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -318,10 +318,11 @@ section {
     display: none;
 }
 
-/* Language Switcher Styling */
+/* Language Switcher Styling — Version Drapeaux */
 .lang-switch {
     display: flex;
-    gap: 0.35rem;
+    gap: 1.2rem;
+    /* Espace optimal entre les groupes de drapeaux */
     align-items: center;
     border-left: 1px solid var(--border-color);
     padding-left: 1.5rem;
@@ -329,20 +330,40 @@ section {
 }
 
 .lang-link {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--text-muted);
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0.5;
+    /* Les drapeaux non actifs sont estompés */
     transition: var(--transition-fast);
 }
 
 .lang-link:hover,
 .lang-link.active {
-    color: var(--text-main);
-    background: var(--primary-glow);
+    opacity: 1;
+    /* Pleine visibilité si actif ou survolé */
+    transform: translateY(-1px);
+    /* Léger effet dynamique très pro */
 }
 
+/* Style unique pour vos icônes de drapeaux */
+.lang-switch .flag-icon {
+    width: 22px;
+    /* Taille idéale pour votre barre de navigation */
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    /* Légers bords arrondis */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    /* Ombre pour ressortir sur le fond sombre */
+}
+
+/* Rapproche les duos de drapeaux (US/UK et CG/CD) */
+.lang-switch .flag-joined {
+    margin-left: 2px;
+}
+
+/* Version Mobile (Parfaitement préservée et adaptée) */
 @media (max-width: 768px) {
     .lang-switch {
         border-left: none;
@@ -352,12 +373,14 @@ section {
         margin-left: 0;
         margin-top: 1rem;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.5rem;
+        /* Un peu plus d'espace sur mobile pour cliquer facilement */
     }
 
-    .lang-link {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
+    .lang-switch .flag-icon {
+        width: 26px;
+        /* Drapeaux légèrement plus grands sur mobile pour le confort tactile */
+        height: 19px;
     }
 }
 
