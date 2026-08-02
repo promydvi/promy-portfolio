@@ -1527,3 +1527,577 @@ a.client-tag:hover {
         gap: 1.5rem;
     }
 }
+
+/* ==========================================================================
+   PORTFOLIO REFACTOR - INLINE STYLE CLEANUP
+   ========================================================================== */
+
+/* Shared Utility / Global styles */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #1f293d;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-intermediary {
+    padding: 80px 20px;
+    text-align: center;
+    background: radial-gradient(circle at center, #131c2e 0%, #0b0f19 100%);
+    border-top: 1px solid var(--border-color);
+}
+
+.cta-intermediary-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-intermediary-title {
+    color: #ffffff;
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.cta-intermediary-text {
+    color: #b3b9c9;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.cta-intermediary-btn {
+    display: inline-block;
+    border: 1px solid #4df2b8;
+    color: #4df2b8;
+    padding: 12px 35px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-intermediary-btn:hover {
+    background: rgba(77, 242, 184, 0.1);
+    box-shadow: 0 0 15px rgba(77, 242, 184, 0.2);
+}
+
+/* Home Page (index.html) sections */
+.why-choose-me {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-me h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.why-choose-me-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.why-choose-me-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #121824;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.why-choose-me-card h3 {
+    color: #4df2b8;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.why-choose-me-card p {
+    color: #b3b9c9;
+    line-height: 1.6;
+}
+
+.key-metrics {
+    padding: 50px 20px;
+    background-color: #0b0f19;
+    text-align: center;
+}
+
+.key-metrics-grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metric-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.metric-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4facfe;
+}
+
+.metric-label {
+    color: #b3b9c9;
+    margin-top: 5px;
+}
+
+.recent-work {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recent-work h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.portfolio-preview {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.portfolio-preview-card {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #1f293d;
+    padding: 20px;
+    border-radius: 6px;
+    background: var(--card-bg-glass);
+}
+
+.portfolio-preview-card .tag {
+    font-size: 0.8rem;
+    color: #4facfe;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.portfolio-preview-card h4 {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.portfolio-preview-card p {
+    color: #b3b9c9;
+    font-size: 0.95rem;
+}
+
+.latest-insights {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.latest-insights h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.latest-insights p {
+    color: #b3b9c9;
+    margin-bottom: 30px;
+}
+
+.insights-teaser-card {
+    background-color: #121824;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+.insights-teaser-card h4 {
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+}
+
+.insights-teaser-card p {
+    color: #b3b9c9;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.insights-teaser-card .btn-teaser {
+    display: inline-block;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    color: #0b0f19;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.insights-teaser-card .btn-teaser:hover {
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+}
+
+/* Services Page (services.html) elements */
+.service-card-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 1rem;
+}
+
+.service-card-list-item {
+    font-size: 0.85rem;
+    color: #b3b9c9;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.service-card-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.service-card-list-item .check {
+    color: #4df2b8;
+    font-weight: bold;
+}
+
+.services-workflow-section {
+    padding: 80px 0;
+    background-color: #0b0f19;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.services-workflow-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-workflow-section .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-workflow-section .section-subtitle {
+    color: #4facfe;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.services-workflow-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.services-workflow-section .section-header p {
+    color: #b3b9c9;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.workflow-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.workflow-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #121824;
+    padding: 35px 25px 25px 25px;
+    border-radius: 8px;
+    border: 1px solid #1f293d;
+    position: relative;
+    margin-top: 15px;
+}
+
+.workflow-card .step-num {
+    position: absolute;
+    top: -20px;
+    left: 25px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: #0b0f19;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.45);
+}
+
+.workflow-card h4 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 10px 0 12px 0;
+    font-weight: 700;
+}
+
+.workflow-card p {
+    color: #b3b9c9;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* About Page (about.html) elements */
+.lang-item-detailed {
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    padding-bottom: 1rem;
+}
+
+.lang-item-detailed:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.lang-header-detailed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.lang-name-detailed {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.lang-level-badge {
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.lang-level-badge.native {
+    color: #4df2b8;
+    background: rgba(77,242,184,0.1);
+}
+
+.lang-level-badge.fluent {
+    color: #4facfe;
+    background: rgba(79,172,254,0.1);
+}
+
+.lang-level-badge.working {
+    color: #b3b9c9;
+    background: rgba(255,255,255,0.05);
+}
+
+.lang-level-badge.beginner {
+    color: #b3b9c9;
+    background: rgba(255,255,255,0.05);
+}
+
+.lang-dots-margin {
+    margin-bottom: 10px;
+}
+
+.lang-description {
+    color: #b3b9c9;
+    font-size: 0.88rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.credentials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.credential-item {
+    background: rgba(255,255,255,0.02);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.credential-item.academic {
+    border-left: 3px solid #818cf8;
+}
+
+.credential-item.vocational {
+    border-left: 3px solid #34d399;
+}
+
+.credential-item strong {
+    color: #ffffff;
+    display: block;
+}
+
+.credential-item span {
+    color: #717b91;
+    font-size: 0.85rem;
+}
+
+.timeline-badge {
+    font-size: 0.72rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.timeline-badge.academic {
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+}
+
+.timeline-badge.vocational {
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+}
+
+.timeline-badge.professional {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #34d399;
+}
+
+.philosophy-section {
+    border-top: 1px solid var(--border-color);
+    padding-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.philosophy-section .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.philosophy-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.philosophy-section p {
+    color: #b3b9c9;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.philosophy-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.philosophy-card {
+    flex: 1;
+    min-width: 280px;
+    background-color: #121824;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #1f293d;
+}
+
+.philosophy-card div {
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+}
+
+.philosophy-card h4 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.philosophy-card p {
+    color: #b3b9c9;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Tools Page (tools.html) elements */
+.tool-description-text {
+    color: #b3b9c9;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+    .why-choose-me-grid,
+    .portfolio-preview,
+    .workflow-grid,
+    .philosophy-grid {
+        flex-direction: column;
+    }
+    
+    .why-choose-me-card,
+    .portfolio-preview-card,
+    .workflow-card,
+    .philosophy-card {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-intermediary {
+        margin: 4rem 0 -6rem 0 !important;
+    }
+}
