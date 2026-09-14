@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacter Promy</title>
+    <title>Contactez Promy - Demande de devis &amp; Collaboration</title>
     <meta name="description"
-        content="Prendre contact pour toute demande de traduction, évaluation de localisation ou opportunité de collaboration avec Promy de Valeur Idzala.">
+        content="Contactez-moi pour toute demande de traduction, étude de projet de localisation ou opportunité de collaboration avec Promy de Valeur Idzala.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,8 @@
     <!-- Header / Navigation -->
     <header class="header" id="main-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo" id="logo-link"> <span class="logo-accent">PROMY</span> D.I.
+            <a href="index.html" class="logo" id="logo-link">
+                <span class="logo-accent">PROMY</span> D.I.
             </a>
             <nav class="nav-menu" id="navigation-menu">
                 <a href="index.html" class="nav-link" id="nav-home">Accueil</a>
@@ -31,13 +32,21 @@
                 <a href="about.html" class="nav-link" id="nav-about">À propos</a>
                 <a href="contact.html" class="nav-link btn-nav active" id="nav-contact">Contact</a>
                 <div class="lang-switch">
-                    <a href="../contact.html" class="lang-link">EN</a>
-                    <a href="../fr/contact.html" class="lang-link active">FR</a>
-                    <a href="../ln/contact.html" class="lang-link">LN</a>
+                    <a href="../contact.html" class="lang-link" title="Anglais">
+                        <img src="https://flagcdn.com/us.svg" alt="EN" class="flag-icon">
+                    </a>
+                    <a href="contact.html" class="lang-link active" title="Français">
+                        <img src="https://flagcdn.com/fr.svg" alt="FR" class="flag-icon">
+                    </a>
+                    <a href="../ln/contact.html" class="lang-link" title="Lingala">
+                        <img src="https://flagcdn.com/cg.svg" alt="LN" class="flag-icon">
+                    </a>
                 </div>
             </nav>
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
-                <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Afficher le menu de navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
         </div>
     </header>
@@ -46,10 +55,9 @@
         <!-- Page Header -->
         <header class="page-header">
             <div class="container">
-                <span class="section-subtitle">Prendre contact</span>
+                <span class="section-subtitle">Prendre Contact</span>
                 <h1>Me Contacter</h1>
-                <p>Vous avez un projet de localisation, besoin d'une traduction précise ou d'une révision linguistique ?
-                    Envoyez-moi un message dès aujourd'hui.</p>
+                <p>Contactez-moi pour vos projets de traduction, révision, transcription ou partenariats à long terme.</p>
             </div>
         </header>
 
@@ -67,7 +75,7 @@
                                 </svg>
                             </div>
                             <div class="contact-card-details">
-                                <h4>Envoyez un e-mail</h4>
+                                <h4>Me laisser un message</h4>
                                 <p><a href="mailto:devaleuridzala@gmail.com">devaleuridzala@gmail.com</a></p>
                             </div>
                         </div>
@@ -80,7 +88,7 @@
                                 </svg>
                             </div>
                             <div class="contact-card-details">
-                                <h4>Appelez ma ligne</h4>
+                                <h4>Appeler ma ligne</h4>
                                 <p><a href="tel:+242069289768">+242 06 928 9768</a></p>
                             </div>
                         </div>
@@ -93,47 +101,55 @@
                                 </svg>
                             </div>
                             <div class="contact-card-details">
-                                <h4>LinkedIn</h4>
+                                <h4>Profil LinkedIn</h4>
                                 <p><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/"
-                                        target="_blank" rel="noopener">Connexion professionnel</a></p>
+                                        target="_blank" rel="noopener">Réseau Professionnel</a></p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Contact Form -->
                     <div class="contact-form-wrapper" id="form-wrapper">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form"
-                            id="main-contact-form">
-                            <!-- Web3Forms Integration -->
-                            <input type="hidden" name="access_key" value="1b08c22d-5857-4b8c-8a50-6b41b44a6fc1">
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="form-title-container">
+                            <h3 class="form-title" id="contact-form-title">Envoyer un message</h3>
+                            <p class="form-subtitle" id="contact-form-subtitle">Remplissez le formulaire ci-dessous pour demander un devis ou discuter d'un projet.</p>
+                        </div>
+                        <div>
+                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form"
+                                id="main-contact-form">
+                                <!-- Web3Forms Integration -->
+                                <input type="hidden" name="access_key" value="1b08c22d-5857-4b8c-8a50-6b41b44a6fc1">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="form-name">Nom complet *</label>
-                                    <input type="text" id="form-name" name="name"
-                                        placeholder="Veuillez entrer votre nom ici" required>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="form-name">Nom Complet</label>
+                                        <input type="text" id="form-name" name="name"
+                                            placeholder="Ex: Jean Dupont" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email">Adresse E-mail</label>
+                                        <input type="email" id="form-email" name="email"
+                                            placeholder="Ex: jean.dupont@entreprise.com" required>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="form-email">Adresse e-mail *</label>
-                                    <input type="email" id="form-email" name="email"
-                                        placeholder="Veuillez entrer votre adresse e-mail" required>
+                                    <label for="form-subject">Service Souhaité</label>
+                                    <select id="form-subject" name="subject">
+                                        <option value="translation">Traduction &amp; Localisation</option>
+                                        <option value="proofreading">Post-édition MTPE ou Relecture</option>
+                                        <option value="transcription">Transcription Audiovisuelle</option>
+                                        <option value="other">Autre demande de collaboration</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-subject">Service requis</label>
-                                <input type="text" id="form-subject" name="subject" placeholder="Votre projet / requête"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-message">Message *</label>
-                                <textarea id="form-message" name="message" rows="6"
-                                    placeholder="Veuillez décrire brièvement les détails de votre projet, le volume de texte et vos détails..."
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-button">Envoyer la
-                                message</button>
-                        </form>
+                                <div class="form-group">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" name="message" rows="6"
+                                        placeholder="Décrivez votre projet, vos langues cibles et vos exigences..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block" id="form-submit-button">Envoyer le Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,52 +165,45 @@
                     <ul>
                         <li><a href="services.html">Traduction &amp; Localisation</a></li>
                         <li><a href="services.html">Médical &amp; Sciences de la vie</a></li>
-                        <li><a href="services.html">iGaming &amp; Contenus promotionnels</a></li>
+                        <li><a href="services.html">iGaming &amp; Promotionnel</a></li>
                         <li><a href="services.html">Entraînement IA &amp; Annotation</a></li>
                         <li><a href="services.html">Transcription audiovisuelle</a></li>
-                        <li><a href="services.html">Enseignement des langues</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Outils</h4>
                     <ul>
-                        <li><a href="tools.html">Phrase TMS</a></li>
-                        <li><a href="tools.html">memoQ</a></li>
-                        <li><a href="tools.html">Smartcat</a></li>
-                        <li><a href="tools.html">XTM Cloud &amp; Xbench</a></li>
-                        <li><a href="tools.html">OS &amp; Design web</a></li>
+                        <li><a href="tools.html">Outils TAO</a></li>
+                        <li><a href="tools.html">Outils d'IA</a></li>
+                        <li><a href="tools.html">Productivité</a></li>
+                        <li><a href="tools.html">Autres utilitaires</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Publications</h4>
                     <ul>
-                        <li><a href="services.html">Tendances de la traduction</a></li>
-                        <li><a href="releases.html">Perspectives de la localisation</a></li>
-                        <li><a href="releases.html">Évolution de l'industrie</a></li>
+                        <li><a href="releases.html">Mes publications</a></li>
+                        <li><a href="releases.html">Articles en anglais</a></li>
+                        <li><a href="releases.html">Articles en français</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>A propos</h4>
+                    <h4>À propos</h4>
                     <ul>
-                        <li><a href="about.html">Biographie</a></li>
-                        <li><a href="about.html">Grille des langues</a></li>
-                        <li><a href="about.html">Parcours académique</a></li>
-                        <li><a href="about.html">Travail bénévole</a></li>
+                        <li><a href="about.html">Qui suis-je ?</a></li>
+                        <li><a href="about.html">Langues &amp; Diplômes</a></li>
+                        <li><a href="about.html">Engagement bénévole</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="contact.html">Prendre contact</a></li>
-                        <li><a href="mailto:devaleuridzala@gmail.com">Envoyer un e-mail</a></li>
-                        <li><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/" target="_blank"
-                                rel="noopener">Se connecter via LinkedIn</a></li>
-                        <li><a href="tel:+242069289768">Appeler la ligne téléphonique</a></li>
+                        <li><a href="contact.html">Me contacter</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Promy De Valeur Idzala. Tous droits réservés.</p>
+                <p>&copy; 2026 Promy De Valeur Idzala. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

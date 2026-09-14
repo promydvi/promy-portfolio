@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos de Promy</title>
+    <title>À propos de Promy - Parcours &amp; Expertise</title>
     <meta name="description"
-        content="En savoir plus sur Promy De Valeur Idzala, mon parcours académique en langues étrangères, en littérature et en journalisme, mes compétences linguistiques ainsi que mon engagement communautaire.">
+        content="En savoir plus sur Promy De Valeur Idzala, mon parcours académique en langues étrangères, littérature et journalisme, mes compétences linguistiques et mon engagement bénévole.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,8 @@
     <!-- Header / Navigation -->
     <header class="header" id="main-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo" id="logo-link"> <span class="logo-accent">PROMY</span> D.I.
+            <a href="index.html" class="logo" id="logo-link">
+                <span class="logo-accent">PROMY</span> D.I.
             </a>
             <nav class="nav-menu" id="navigation-menu">
                 <a href="index.html" class="nav-link" id="nav-home">Accueil</a>
@@ -31,13 +32,21 @@
                 <a href="about.html" class="nav-link active" id="nav-about">À propos</a>
                 <a href="contact.html" class="nav-link btn-nav" id="nav-contact">Contact</a>
                 <div class="lang-switch">
-                    <a href="../about.html" class="lang-link">EN</a>
-                    <a href="../fr/about.html" class="lang-link active">FR</a>
-                    <a href="../ln/about.html" class="lang-link">LN</a>
+                    <a href="../about.html" class="lang-link" title="Anglais">
+                        <img src="https://flagcdn.com/us.svg" alt="EN" class="flag-icon">
+                    </a>
+                    <a href="about.html" class="lang-link active" title="Français">
+                        <img src="https://flagcdn.com/fr.svg" alt="FR" class="flag-icon">
+                    </a>
+                    <a href="../ln/about.html" class="lang-link" title="Lingala">
+                        <img src="https://flagcdn.com/cg.svg" alt="LN" class="flag-icon">
+                    </a>
                 </div>
             </nav>
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
-                <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Afficher le menu de navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
         </div>
     </header>
@@ -46,163 +55,198 @@
         <!-- Page Header -->
         <header class="page-header">
             <div class="container">
-                <span class="section-subtitle">Quel profil ai-je?</span>
-                <h1>Parcours aadémique &amp; pofessionnel</h1>
-                <p>Un aperçu de ma formation académique, de mes compétences en traduction et de mes engagements
-                    communautaires.</p>
+                <span class="section-subtitle">Derrière les Mots</span>
+                <h1>Mon Histoire &amp; Ma Vision</h1>
+                <p>Comment une solide formation en journalisme, en littérature et en enseignement façonne des stratégies de localisation d'excellence.</p>
             </div>
         </header>
 
-        <!-- About Grid -->
+        <!-- About Core Section -->
         <section class="about-content-section" style="padding-top: 0;">
             <div class="container">
-                <div class="about-grid" id="about-layout-grid">
-                    <!-- Column 1: Profile & Languages -->
-                    <div class="about-col-info" id="about-profile-languages">
-                        <div class="about-profile-header">
-                            <div class="about-image-wrapper">
-                                <img src="../profile.jpg" alt="Promy de Valeur Idzala" class="about-profile-img" />
-                            </div>
-                            <div class="profile-details-card" id="profile-text-card">
-                                <h3>Présentation pofessionnelle</h3>
-                                <p>
-                                    Linguiste polyvalent et rigoureux, je combine mes compétences pour rapprocher les
-                                    cultures grâce à des services de traduction et de localisation de haute qualité. Mon
-                                    expérience en journalisme, alliée à ma formation académique en langues et
-                                    littérature étrangères, me confère un avantage unique : je ne traduis pas de simples
-                                    mots, je restitue fidèlement le contexte, le ton et l'intention initiale.
-                                </p>
-                                <p>
-                                    Je me spécialise dans les services de traduction entre l'anglais, le français et le
-                                    lingala. Qu'il s'agisse de communication d'entreprise, de sciences de la vie,
-                                    d'interface logicielle (UI), de fintech, de documents juridiques ou de tout autre
-                                    type de contenu, mon objectif reste le même : fournir des livraisons précises,
-                                    fluides et ponctuelles.
-                                </p>
-                            </div>
+                <!-- Intro Profile (Photo + Main Pitch) -->
+                <div class="about-profile-header"
+                    style="display: flex; gap: 3rem; align-items: flex-start; margin-bottom: 4rem;">
+                    <div class="about-image-wrapper" style="flex: 0 0 220px;">
+                        <img src="../profile.jpg" alt="Promy de Valeur Idzala" class="about-profile-img"
+                            style="width: 100%; border-radius: 8px;">
+                    </div>
+                    <div class="profile-details-card" id="profile-text-card" style="flex: 1; background-color: #121824">
+                        <h2
+                            style="color: #ffffff; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.8rem; text-align: center;">
+                            Par-delà la Traduction Mécanique</h2>
+                        <div style="font-size: 1.05rem; line-height: 1.7; color: #b3b9c9; text-align: justify;">
+                            <p>Linguiste polyvalent et rigoureux, je combine mes compétences pour rapprocher les cultures grâce à des services de traduction et de localisation de haute qualité. Mon expérience en journalisme, alliée à ma formation académique en langues et littératures étrangères, me confère un avantage unique : je ne traduis pas de simples mots, je restitue fidèlement le contexte, la voix et l'intention initiale.</p>
+                            <p>Spécialisé dans l'adaptation interculturelle entre l'anglais, le français et le lingala, j'aborde chaque projet — des données médicales aux algorithmes Fintech en passant par les interfaces logicielle — avec une rigueur identique : précision, fluidité et pertinence contextuelle.</p>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Language Skills -->
-                        <div class="languages-card" id="languages-card-wrapper">
-                            <h3>Maîtrise Linguistique</h3>
-                            <div class="language-progress-grid">
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Français</span> <span class="lang-level">Langue
-                                            maternelle</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span> <span class="dot active"></span> <span
-                                            class="dot active"></span> <span class="dot active"></span> <span
-                                            class="dot active"></span>
-                                    </div>
+                <!-- Core Expertise Pillars -->
+                <div class="expertise-grid">
+                    <div class="philosophy-card">
+                        <div>🎯</div>
+                        <h4>Précision Journalistique</h4>
+                        <p>Mon parcours de reporter et mon DEUG II en journalisme m'ont appris à extraire l'essentiel instantanément, respecter les consignes strictes et adapter le ton à l'audience.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div>✍️</div>
+                        <h4>Rigueur Littéraire &amp; Culturelle</h4>
+                        <p>Ma Maîtrise en Littérature Anglaise me permet de saisir les structures syntaxiques complexes et de proposer une transcréation élégante où le style est aussi important que le fond.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div>🎓</div>
+                        <h4>Clarté Pédagogique</h4>
+                        <p>Mes années d'enseignement des langues étrangères ont affiné ma capacité à décortiquer la terminologie, gérer des glossaires d'entreprise et garantir une communication fluide.</p>
+                    </div>
+                </div>
+
+                <!-- Working Philosophy & Values -->
+                <div class="philosophy-section">
+                    <div class="section-header">
+                        <span class="section-subtitle">Philosophie</span>
+                        <h2>Philosophie de Travail &amp; Valeurs</h2>
+                        <p>Comment mon expérience se traduit par une exécution de projet irréprochable.</p>
+                    </div>
+                    <div class="philosophy-grid">
+                        <div class="philosophy-card">
+                            <div>📰</div>
+                            <h4>L'Esprit Journalistique</h4>
+                            <p>Traduire le sens profond et le contexte, au-delà du mot à mot.</p>
+                        </div>
+                        <div class="philosophy-card">
+                            <div>🛠️</div>
+                            <h4>Rigueur &amp; Outils TAO</h4>
+                            <p>Garantie d'une cohérence terminologique totale grâce aux mémoires de traduction.</p>
+                        </div>
+                        <div class="philosophy-card">
+                            <div>🔒</div>
+                            <h4>Confidentialité &amp; Ponctualité</h4>
+                            <p>Respect strict des délais de livraison et sécurité des documents confidentiels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills & Background Overview -->
+                <div class="about-grid" id="about-layout-grid">
+
+                    <!-- Left Column: Language Progress Blocks -->
+                    <div class="languages-card" id="languages-card-wrapper">
+                        <h3>Compétences Linguistiques</h3>
+                        <div class="language-progress-grid">
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Français</span>
+                                    <span class="lang-level-badge native">Langue Maternelle</span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Anglais</span> <span class="lang-level">Courant</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span> <span class="dot active"></span> <span
-                                            class="dot active"></span> <span class="dot active"></span> <span
-                                            class="dot active"></span>
-                                    </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Lingala</span> <span class="lang-level">Langue
-                                            maternelle</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span> <span class="dot active"></span> <span
-                                            class="dot active"></span> <span class="dot active"></span> <span
-                                            class="dot active"></span>
-                                    </div>
+                                <p class="lang-description">Langue maternelle utilisée pour la traduction d'entreprise haut de gamme, la localisation, la transcréation et la relecture finale.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Anglais</span>
+                                    <span class="lang-level-badge fluent">Courant / Bilingue</span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Espagnol</span> <span class="lang-level">Compétence
-                                            professionnelle</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span> <span class="dot active"></span> <span
-                                            class="dot active"></span> <span class="dot"></span> <span
-                                            class="dot"></span>
-                                    </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Russe</span> <span class="lang-level">Niveau
-                                            débutant</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span> <span class="dot"></span> <span
-                                            class="dot"></span> <span class="dot"></span> <span class="dot"></span>
-                                    </div>
+                                <p class="lang-description">Principale langue source. Expert dans l'analyse de fichiers terminologiques complexes, interfaces logicielle, rapports financiers et dossiers médicaux.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Lingala</span>
+                                    <span class="lang-level-badge native">Langue Maternelle</span>
                                 </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                </div>
+                                <p class="lang-description">Langue maternelle régionale. Spécialisé dans l'adaptation régionale, la localisation de programmes d'ONG et la transcription audiovisuelle.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Espagnol</span>
+                                    <span class="lang-level-badge working">Notions Professionnelles</span>
+                                </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <p class="lang-description">Langue complémentaire, utilisée dans le cadre de l'enseignement et des recherches terminologiques croisées.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Russe</span>
+                                    <span class="lang-level-badge beginner">Niveau Débutant</span>
+                                </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <p class="lang-description">Compréhension grammaticale fondamentale, apprentissage en cours.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Column 2: Timelines -->
-                    <div class="about-col-timeline" id="about-experience-education">
-                        <!-- Education -->
-                        <div class="timeline-block" id="education-timeline">
-                            <h3 class="timeline-group-title">Parcours académique</h3>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Master en Anglais</h4>
-                                        <p class="timeline-desc">Spécialisation en littérature et civilisation
-                                            anglophones, avec un mémoire de recherche portant sur la littérature
-                                            britannique. Pour référence, mon mémoire est disponible en ligne.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Licence ne Langues vivantes étrangères</h4>
-                                        <p class="timeline-desc">Études approfondies en anglais, français et espagnol,
-                                            avec un accent particulier sur la traduction et la dynamique des langues.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">DACAF (équivalent BTS) en Journalisme</h4>
-                                        <p class="timeline-desc">Formation professionnelle de deux ans axée sur le
-                                            journalisme radiotélévisé, la production médiatique et la communication
-                                            stratégique. Formation particulière aux langues locales congolaises,
-                                            incluant le lingala et le kituba.
-                                        </p>
-                                    </div>
-                                </div>
+                    <!-- Right Column: Academic Credentials & Verification -->
+                    <div class="about-col-timeline">
+                        <h3>Parcours Académique</h3>
+                        <p>Une formation supérieure solide validée par des diplômes universitaires certifiés :</p>
+
+                        <ul class="credentials-list">
+                            <li class="credential-item academic">
+                                <strong>Maîtrise — Langues &amp; Littératures Étrangères (Anglais)</strong>
+                                <span>Spécialisation en littérature et civilisation anglaises, avec un mémoire de recherche sur la littérature britannique.</span>
+                            </li>
+                            <li class="credential-item academic">
+                                <strong>Licence — Langues &amp; Littératures Étrangères</strong>
+                                <span>Études approfondies en anglais, français et espagnol, axées sur la traduction et la dynamique des langues.</span>
+                            </li>
+                            <li class="credential-item vocational">
+                                <strong>DEUG II — Journalisme &amp; Médias</strong>
+                                <span>Formation professionnelle axée sur le journalisme audiovisuel, la production média et la communication stratégique, incluant les langues locales (Lingala et Kituba).</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Non-Translation Experience -->
+                <div class="timeline-block" id="work-timeline">
+                    <h3 class="timeline-group-title">Autres Expériences Professionnelles</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-badge professional">Poste Professionnel</span>
+                                <h4 class="timeline-title">Enseignant de Langues Étrangères</h4>
+                                <p class="timeline-desc">Enseignement de l'anglais et de l'espagnol comme secondes langues. Conception de programmes, animation de cours et évaluation des apprenants.</p>
                             </div>
                         </div>
-
-                        <!-- Non-Translation Experience -->
-                        <div class="timeline-block" id="work-timeline">
-                            <h3 class="timeline-group-title">Autres expériences</h3>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Enseignant de Langues étrangères</h4>
-                                        <p class="timeline-desc">Enseignement de l'anglais et de l'espagnol comme
-                                            langues secondes. Conception de programmes d’enseignement, évaluation des
-                                            élèves et formations linguistiques ciblées.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Journaliste &amp; Reporter</h4>
-                                        <p class="timeline-desc">Animation de reportages médiatiques, journalisme
-                                            d'investigation sportive et gestion de tâches de communication publique en
-                                            contexte multilingue.</p>
-                                    </div>
-                                </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-badge professional">Poste Professionnel</span>
+                                <h4 class="timeline-title">Journaliste &amp; Reporter</h4>
+                                <p class="timeline-desc">Animation d'émissions de radio et de télévision, reportages sportifs et tâches de communication publique multilingue.</p>
                             </div>
                         </div>
                     </div>
@@ -210,41 +254,44 @@
 
                 <!-- Volunteer Engagement -->
                 <div class="volunteer-section" id="volunteer-container">
-                    <h3 class="volunteer-title">Engagements bénévoles &amp; Contributions</h3>
+                    <h3 class="volunteer-title">Engagement Bénévole &amp; Contributions</h3>
                     <div class="volunteer-grid">
                         <div class="volunteer-card">
                             <span class="volunteer-icon">🌍</span>
-                            <h4>Translators Without Borders</h4>
-                            <p>Traducteur communautaire actif, fournissant une assistance linguistique essentielle pour
-                                des initiatives humanitaires mondiales.</p>
+                            <h4>Traducteurs sans Frontières (TWB)</h4>
+                            <p>Traducteur communautaire actif fournissant une assistance linguistique essentielle pour des initiatives humanitaires internationales.</p>
                         </div>
                         <div class="volunteer-card">
-                            <span class="volunteer-icon">📚</span>
+                            <span class="volunteer-icon">💠</span>
                             <h4>Open Language Initiative</h4>
-                            <p>Réviseur francophone, aidant les projets de traduction menés par des pairs à atteindre
-                                les standards de fluidité natifs.</p>
+                            <p>Relecteur français aidant les projets de traduction par les pairs à atteindre les normes de fluidité des locuteurs natifs.</p>
                         </div>
                         <div class="volunteer-card">
                             <span class="volunteer-icon">🤝</span>
                             <h4>Proz Pro Bono</h4>
-                            <p>Services bénévoles de traduction et révision pour des organisations à but non lucratif et
-                                des programmes pro bono.</p>
+                            <p>Services bénévoles de révision et de traduction pour des organisations à but non lucratif et des programmes pro bono.</p>
                         </div>
                         <div class="volunteer-card">
                             <span class="volunteer-icon">⚖️</span>
                             <h4>Progressive International</h4>
-                            <p>Révision en français et localisation de travaux de recherche socio-politique et de
-                                journalisme international.</p>
+                            <p>Révision et localisation en français de travaux de recherche sociopolitique et de journalisme international.</p>
                         </div>
                         <div class="volunteer-card">
                             <span class="volunteer-icon">🎓</span>
                             <h4>Global Translator's Community</h4>
-                            <p>Traducteur francophone pour des contenus pédagogiques et des cours hébergés sur
-                                Coursera.org</p>
+                            <p>Traducteur français pour des cours éducatifs hébergés sur la plateforme Coursera.org.</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Bottom CTA Intermediary Section -->
+                <section class="cta-intermediary">
+                    <div class="cta-intermediary-inner">
+                        <h2 class="cta-intermediary-title">Besoin d'un traducteur qui comprend réellement votre message ?</h2>
+                        <p class="cta-intermediary-text">Travaillons ensemble pour créer un contenu impeccable et adapté qui instaurera une confiance durable auprès de votre public.</p>
+                        <a href="contact.html" class="cta-intermediary-btn">Me contacter</a>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
@@ -258,52 +305,45 @@
                     <ul>
                         <li><a href="services.html">Traduction &amp; Localisation</a></li>
                         <li><a href="services.html">Médical &amp; Sciences de la vie</a></li>
-                        <li><a href="services.html">iGaming &amp; Contenus promotionnels</a></li>
+                        <li><a href="services.html">iGaming &amp; Promotionnel</a></li>
                         <li><a href="services.html">Entraînement IA &amp; Annotation</a></li>
                         <li><a href="services.html">Transcription audiovisuelle</a></li>
-                        <li><a href="services.html">Enseignement des langues</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Outils</h4>
                     <ul>
-                        <li><a href="tools.html">Phrase TMS</a></li>
-                        <li><a href="tools.html">memoQ</a></li>
-                        <li><a href="tools.html">Smartcat</a></li>
-                        <li><a href="tools.html">XTM Cloud &amp; Xbench</a></li>
-                        <li><a href="tools.html">OS &amp; Design web</a></li>
+                        <li><a href="tools.html">Outils TAO</a></li>
+                        <li><a href="tools.html">Outils d'IA</a></li>
+                        <li><a href="tools.html">Productivité</a></li>
+                        <li><a href="tools.html">Autres utilitaires</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Publications</h4>
                     <ul>
-                        <li><a href="services.html">Tendances de la traduction</a></li>
-                        <li><a href="releases.html">Perspectives de la localisation</a></li>
-                        <li><a href="releases.html">Évolution de l'industrie</a></li>
+                        <li><a href="releases.html">Mes publications</a></li>
+                        <li><a href="releases.html">Articles en anglais</a></li>
+                        <li><a href="releases.html">Articles en français</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>A propos</h4>
+                    <h4>À propos</h4>
                     <ul>
-                        <li><a href="about.html">Biographie</a></li>
-                        <li><a href="about.html">Grille des langues</a></li>
-                        <li><a href="about.html">Parcours académique</a></li>
-                        <li><a href="about.html">Travail bénévole</a></li>
+                        <li><a href="about.html">Qui suis-je ?</a></li>
+                        <li><a href="about.html">Langues &amp; Diplômes</a></li>
+                        <li><a href="about.html">Engagement bénévole</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="contact.html">Prendre contact</a></li>
-                        <li><a href="mailto:devaleuridzala@gmail.com">Envoyer un e-mail</a></li>
-                        <li><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/" target="_blank"
-                                rel="noopener">Se connecter via LinkedIn</a></li>
-                        <li><a href="tel:+242069289768">Appeler la ligne téléphonique</a></li>
+                        <li><a href="contact.html">Me contacter</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Promy De Valeur Idzala. Tous droits réservés.</p>
+                <p>&copy; 2026 Promy De Valeur Idzala. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
