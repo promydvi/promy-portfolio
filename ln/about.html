@@ -1,12 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ln">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promy Azali Nani</title>
+    <link rel="alternate" hreflang="en" href="https://promydvi.com/about.html" />
+    <link rel="alternate" hreflang="fr" href="https://promydvi.com/fr/about.html" />
+    <link rel="alternate" hreflang="ln" href="https://promydvi.com/ln/about.html" />
+    <link rel="alternate" hreflang="x-default" href="https://promydvi.com/about.html" />
+    <link rel="canonical" href="https://promydvi.com/ln/about.html" />
     <meta name="description"
-        content="Learn more about Promy de Valeur Idzala, my academic background in English and journalism, language competencies, and volunteer achievements.">
+        content="Learn more about Promy De Valeur Idzala, my academic background in English and journalism, language competencies, and volunteer achievements.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +37,15 @@
                 <a href="about.html" class="nav-link active" id="nav-about">Nazali Nani</a>
                 <a href="contact.html" class="nav-link btn-nav" id="nav-contact">Solola na Ngai</a>
                 <div class="lang-switch">
-                    <a href="../about.html" class="lang-link">EN</a>
-                    <a href="../fr/about.html" class="lang-link">FR</a>
-                    <a href="../ln/about.html" class="lang-link active">LN</a>
+                    <a href="../about.html" class="lang-link" title="English (US/UK)">
+                        <img src="https://flagcdn.com/us.svg" alt="EN" class="flag-icon">
+                    </a>
+                    <a href="../fr/about.html" class="lang-link" title="French">
+                        <img src="https://flagcdn.com/fr.svg" alt="FR" class="flag-icon">
+                    </a>
+                    <a href="about.html" class="lang-link active" title="Lingala">
+                        <img src="https://flagcdn.com/cg.svg" alt="LN" class="flag-icon">
+                    </a>
                 </div>
             </nav>
             <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
@@ -49,170 +60,232 @@
         <!-- Page Header -->
         <header class="page-header">
             <div class="container">
-                <span class="section-subtitle">What my profile is</span>
-                <h1>Educational & Professional Background</h1>
-                <p>An overview of my academic foundation, translation capabilities, and community-driven work.</p>
+                <span class="section-subtitle">Behind the Words</span>
+                <h1>The Story &amp; Mindset</h1>
+                <p>How a foundation in journalism, literature, and education shapes elite localization strategies.</p>
             </div>
         </header>
 
-        <!-- About Grid -->
+        <!-- About Core Section -->
         <section class="about-content-section" style="padding-top: 0;">
             <div class="container">
-                <div class="about-grid" id="about-layout-grid">
-                    <!-- Column 1: Profile & Languages -->
-                    <div class="about-col-info" id="about-profile-languages">
-                        <div class="about-profile-header">
-                            <div class="about-image-wrapper">
-                                <img src="../profile.jpg" alt="Promy de Valeur Idzala" class="about-profile-img">
-                            </div>
-                            <div class="profile-details-card" id="profile-text-card">
-                                <h3>Professional Statement</h3>
-                                <p>
-                                    I am an adaptable and detail-oriented linguist who bridges the gap between different
-                                    cultures through high-quality translation and localization. My background in
-                                    journalism combined with my academic training in foreign languages and literature
-                                    gives me a unique advantage: I don't just translate words; I capture context, voice,
-                                    and intent.
-                                </p>
-                                <p>
-                                    I specialize in translation services from/to English, French, and Lingala languages.
-                                    Whether handling business communication, life science, tech UI strings, fintech,
-                                    legal, or any other type of content, my target remains identical: precise, natural,
-                                    and punctual deliveries.
-                                </p>
-                            </div>
+                <!-- Intro Profile (Photo + Main Pitch) -->
+                <div class="about-profile-header"
+                    style="display: flex; gap: 3rem; align-items: flex-start; margin-bottom: 4rem;">
+                    <div class="about-image-wrapper" style="flex: 0 0 220px;">
+                        <img src="../profile.jpg" alt="Promy de Valeur Idzala" class="about-profile-img"
+                            style="width: 100%; border-radius: 8px;">
+                    </div>
+                    <div class="profile-details-card" id="profile-text-card" style="flex: 1; background-color: #121824">
+                        <h2
+                            style="color: #ffffff; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.8rem; text-align: center;">
+                            Beyond Mechanical Translation</h2>
+                        <div style="font-size: 1.05rem; line-height: 1.7; color: #b3b9c9; text-align: justify;">
+                            <p>I am an adaptable and detail-oriented linguist who bridges the gap between different
+                                cultures through high-quality translation and localization. My background in journalism
+                                combined with my academic training in foreign languages and literature gives me a unique
+                                advantage: I don't just translate words; I capture context, voice, and intent.</p>
+                            <p>Specializing in cross-cultural adaptation between English, French, and Lingala, I
+                                approach every project—from technical Life Sciences data to Fintech algorithms and
+                                fast-paced tech UI strings—with identical rigor: precise, natural, and highly
+                                contextual.</p>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Language Skills -->
-                        <div class="languages-card" id="languages-card-wrapper">
-                            <h3>Language Command</h3>
-                            <div class="language-progress-grid">
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">French</span>
-                                        <span class="lang-level">Native Speaker</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                    </div>
+                <!-- Core Expertise Pillars -->
+                <div class="expertise-grid">
+                    <div class="philosophy-card">
+                        <div>🎯</div>
+                        <h4>Journalistic Precision</h4>
+                        <p>My background as a
+                            reporter and associate degree in journalism trained me to extract core facts instantly,
+                            respect strict technical briefs, and adapt multi-dialect nuances for target audiences.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div>✍️</div>
+                        <h4>Literary &amp; Cultural Depth</h4>
+                        <p>Holding a Master's
+                            degree in English Literature allows me to grasp advanced syntactic structures and deliver
+                            high-end transcreation where tone of voice is just as important as the source text.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div>🎓</div>
+                        <h4>Educational Clarity</h4>
+                        <p>Years spent teaching
+                            foreign languages honed my ability to dissect terminology, manage custom corporate
+                            glossaries, and guarantee clear, crystal-clear communication paths.</p>
+                    </div>
+                </div>
+
+                <!-- Working Philosophy & Values -->
+                <div class="philosophy-section">
+                    <div class="section-header">
+                        <span class="section-subtitle">Philosophy</span>
+                        <h2>Working Philosophy &amp; Key Values</h2>
+                        <p>How my training and background translate into elite-level project execution.</p>
+                    </div>
+                    <div class="philosophy-grid">
+                        <div class="philosophy-card">
+                            <div>📰</div>
+                            <h4>The Journalistic Mindset</h4>
+                            <p>Translating the deep meaning and context, not just the words.</p>
+                        </div>
+                        <div class="philosophy-card">
+                            <div>🛠️</div>
+                            <h4>Rigor &amp; CAT Tools</h4>
+                            <p>Guarantee of total terminology consistency using translation memories.</p>
+                        </div>
+                        <div class="philosophy-card">
+                            <div>🔒</div>
+                            <h4>Confidentiality &amp; Punctuality</h4>
+                            <p>Strict compliance with delivery deadlines and security of confidential documents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills & Background Overview -->
+                <div class="about-grid" id="about-layout-grid">
+
+                    <!-- Left Column: Language Progress Blocks -->
+                    <div class="languages-card" id="languages-card-wrapper">
+                        <h3>Language Assets</h3>
+                        <div class="language-progress-grid">
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">French</span>
+                                    <span class="lang-level-badge native">Native Speaker</span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">English</span>
-                                        <span class="lang-level">Fluent Speaker</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                    </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Lingala</span>
-                                        <span class="lang-level">Native Speaker</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                    </div>
+                                <p class="lang-description">Native
+                                    language used for high-end corporate translation, localization, transcreation, and
+                                    final quality proofreading.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">English</span>
+                                    <span class="lang-level-badge fluent">Fluent Speaker</span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Spanish</span>
-                                        <span class="lang-level">Working Knowledge</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot active"></span>
-                                        <span class="dot"></span>
-                                        <span class="dot"></span>
-                                    </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
                                 </div>
-                                <div class="lang-item">
-                                    <div class="lang-header">
-                                        <span class="lang-name">Russian</span>
-                                        <span class="lang-level">Beginner's Level</span>
-                                    </div>
-                                    <div class="lang-dots">
-                                        <span class="dot active"></span>
-                                        <span class="dot"></span>
-                                        <span class="dot"></span>
-                                        <span class="dot"></span>
-                                        <span class="dot"></span>
-                                    </div>
+                                <p class="lang-description">Primary
+                                    source language. Expert in analyzing complex terminology files, software strings,
+                                    financial records, and medical briefs.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Lingala</span>
+                                    <span class="lang-level-badge native">Native Speaker</span>
                                 </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                </div>
+                                <p class="lang-description">Native
+                                    regional language. Specializing in regional adaptation, localization of NGO
+                                    programs, and audiovisual transcriptions.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Spanish</span>
+                                    <span class="lang-level-badge working">Working Knowledge</span>
+                                </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <p class="lang-description">Additional
+                                    language capacity, utilized for language coaching and baseline translation
+                                    cross-references.</p>
+                            </div>
+                            <div class="lang-item-detailed">
+                                <div class="lang-header-detailed">
+                                    <span class="lang-name-detailed">Russian</span>
+                                    <span class="lang-level-badge beginner">Beginner's Level</span>
+                                </div>
+                                <div class="lang-dots lang-dots-margin">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <p class="lang-description">Fundamental
+                                    grammatical understanding, currently expanding language skills.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Column 2: Timelines -->
-                    <div class="about-col-timeline" id="about-experience-education">
-                        <!-- Education -->
-                        <div class="timeline-block" id="education-timeline">
-                            <h3 class="timeline-group-title">Education</h3>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Master's degree in English</h4>
-                                        <p class="timeline-desc">Specialization in English literature and civilization,
-                                            with a research dissertation on British literature. For your reference, my
-                                            dissertation is available online.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Bachelor's degree in Foreign Languages</h4>
-                                        <p class="timeline-desc">Comprehensive studies in English, French, and Spanish
-                                            with an emphasis on translation and language dynamics.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Associate's degree in Journalism</h4>
-                                        <p class="timeline-desc">Two-year professional vocational training with a focus
-                                            on broadcast journalism, media production, and strategic communication. A
-                                            special training in Congolese local languages, including Lingala and Kituba.
-                                        </p>
-                                    </div>
-                                </div>
+                    <!-- Right Column: Academic Credentials & Verification -->
+                    <div class="about-col-timeline">
+                        <h3>Core Credentials</h3>
+                        <p>For enterprise review
+                            compliance and agency onboarding standards, my technical background rests upon verified
+                            regional milestones:</p>
+
+                        <ul class="credentials-list">
+                            <li class="credential-item academic">
+                                <strong>Master's Degree — English Literature &amp;
+                                    Civilization</strong>
+                                <span>Specialization in English literature
+                                    and civilization, with a research dissertation on British literature. For your
+                                    reference, my dissertation is available online.</span>
+                            </li>
+                            <li class="credential-item academic">
+                                <strong>Bachelor's Degree — Foreign
+                                    Languages</strong>
+                                <span>Comprehensive studies in English,
+                                    French, and Spanish with an emphasis on translation and language dynamics.</span>
+                            </li>
+                            <li class="credential-item vocational">
+                                <strong>Associate's Degree — Journalism &amp;
+                                    Media</strong>
+                                <span>Two-year professional vocational
+                                    training with a focus on broadcast journalism, media production, and strategic
+                                    communication. A special training in Congolese local languages, including Lingala
+                                    and Kituba.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Non-Translation Experience -->
+                <div class="timeline-block" id="work-timeline">
+                    <h3 class="timeline-group-title">Other Experiences</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-badge professional">Professional Role</span>
+                                <h4 class="timeline-title">Foreign Language Teacher</h4>
+                                <p class="timeline-desc">Teaching of English and Spanish as second languages. Designing
+                                    curricula, conducting exams, and providing targeted language training.</p>
                             </div>
                         </div>
-
-                        <!-- Non-Translation Experience -->
-                        <div class="timeline-block" id="work-timeline">
-                            <h3 class="timeline-group-title">Other Experiences</h3>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Foreign Language Teacher</h4>
-                                        <p class="timeline-desc">Teaching of English and Spanish as second languages.
-                                            Designing curricula, conducting exams, and providing targeted language
-                                            training.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="timeline-title">Journalist & Reporter</h4>
-                                        <p class="timeline-desc">Conducted media broadcasting, investigative sports
-                                            reporting, and managed public communication tasks in multiple languages.</p>
-                                    </div>
-                                </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-badge professional">Professional Role</span>
+                                <h4 class="timeline-title">Journalist &amp; Reporter</h4>
+                                <p class="timeline-desc">Conducted media broadcasting, investigative sports reporting,
+                                    and managed public communication tasks in multiple languages.</p>
                             </div>
                         </div>
                     </div>
@@ -220,7 +293,7 @@
 
                 <!-- Volunteer Engagement -->
                 <div class="volunteer-section" id="volunteer-container">
-                    <h3 class="volunteer-title">Volunteer Work & Contributions</h3>
+                    <h3 class="volunteer-title">Volunteer Work &amp; Contributions</h3>
                     <div class="volunteer-grid">
                         <div class="volunteer-card">
                             <span class="volunteer-icon">🌍</span>
@@ -229,7 +302,7 @@
                                 initiatives worldwide.</p>
                         </div>
                         <div class="volunteer-card">
-                            <span class="volunteer-icon">📚</span>
+                            <span class="volunteer-icon">💠</span>
                             <h4>Open Language Initiative</h4>
                             <p>French reviewer helping peer translation projects reach native fluency standards.</p>
                         </div>
@@ -252,6 +325,15 @@
                     </div>
                 </div>
 
+                <!-- Bottom CTA Intermediary Section -->
+                <section class="cta-intermediary">
+                    <div class="cta-intermediary-inner">
+                        <h2 class="cta-intermediary-title">Need a translator who truly understands your voice?</h2>
+                        <p class="cta-intermediary-text">Let's work
+                            together to create flawless, culturally adapted content that builds deep trust with your audience.</p>
+                        <a href="contact.html" class="cta-intermediary-btn">Contact Me</a>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
@@ -263,49 +345,42 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Translation & Localization</a></li>
-                        <li><a href="services.html">Medical & Life Sciences</a></li>
-                        <li><a href="services.html">iGaming & Promotional</a></li>
-                        <li><a href="services.html">AI Training & Annotation</a></li>
+                        <li><a href="services.html">Translation &amp; Localization</a></li>
+                        <li><a href="services.html">Medical &amp; Life Sciences</a></li>
+                        <li><a href="services.html">iGaming &amp; Promotional</a></li>
+                        <li><a href="services.html">AI Training &amp; Annotation</a></li>
                         <li><a href="services.html">Audiovisual Transcription</a></li>
-                        <li><a href="services.html">Language Teaching</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Tools</h4>
                     <ul>
-                        <li><a href="tools.html">Phrase TMS</a></li>
-                        <li><a href="tools.html">memoQ</a></li>
-                        <li><a href="tools.html">Smartcat</a></li>
-                        <li><a href="tools.html">XTM Cloud & Xbench</a></li>
-                        <li><a href="tools.html">Web & OS Design</a></li>
+                        <li><a href="tools.html">CAT Tools</a></li>
+                        <li><a href="tools.html">AI Tools</a></li>
+                        <li><a href="tools.html">Productivity</a></li>
+                        <li><a href="tools.html">Other tools</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Releases</h4>
                     <ul>
-                        <li><a href="releases.html">Translation Trends</a></li>
-                        <li><a href="releases.html">Localization Insights</a></li>
-                        <li><a href="releases.html">Industry Evolution</a></li>
+                        <li><a href="releases.html">My Releases</a></li>
+                        <li><a href="releases.html">English Articles</a></li>
+                        <li><a href="releases.html">French Articles</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="about.html">Biography</a></li>
-                        <li><a href="about.html">Languages Grid</a></li>
-                        <li><a href="about.html">Education Timeline</a></li>
+                        <li><a href="about.html">Who Am I?</a></li>
+                        <li><a href="about.html">Languages &amp; Education</a></li>
                         <li><a href="about.html">Volunteer Work</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="contact.html">Get in Touch</a></li>
-                        <li><a href="mailto:devaleuridzala@gmail.com">Send an Email</a></li>
-                        <li><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/" target="_blank"
-                                rel="noopener">Connect via LinkedIn</a></li>
-                        <li><a href="tel:+242069289768">Call Phone Line</a></li>
+                        <li><a href="contact.html">Contact me</a></li>
                     </ul>
                 </div>
             </div>

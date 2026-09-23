@@ -1,10 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ln">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kosolola na Promy</title>
+    <link rel="alternate" hreflang="en" href="https://promydvi.com/contact.html" />
+    <link rel="alternate" hreflang="fr" href="https://promydvi.com/fr/contact.html" />
+    <link rel="alternate" hreflang="ln" href="https://promydvi.com/ln/contact.html" />
+    <link rel="alternate" hreflang="x-default" href="https://promydvi.com/contact.html" />
+    <link rel="canonical" href="https://promydvi.com/ln/contact.html" />
     <meta name="description"
         content="Get in touch for translation inquiries, localization assessments, or collaboration opportunities with Promy de Valeur Idzala.">
     <!-- Google Fonts -->
@@ -32,9 +37,15 @@
                 <a href="about.html" class="nav-link" id="nav-about">Nazali Nani</a>
                 <a href="contact.html" class="nav-link btn-nav active" id="nav-contact">Solola na Ngai</a>
                 <div class="lang-switch">
-                    <a href="../contact.html" class="lang-link">EN</a>
-                    <a href="../fr/contact.html" class="lang-link">FR</a>
-                    <a href="../ln/contact.html" class="lang-link active">LN</a>
+                    <a href="../contact.html" class="lang-link" title="English (US/UK)">
+                        <img src="https://flagcdn.com/us.svg" alt="EN" class="flag-icon">
+                    </a>
+                    <a href="../fr/contact.html" class="lang-link" title="French">
+                        <img src="https://flagcdn.com/fr.svg" alt="FR" class="flag-icon">
+                    </a>
+                    <a href="contact.html" class="lang-link active" title="Lingala">
+                        <img src="https://flagcdn.com/cg.svg" alt="LN" class="flag-icon">
+                    </a>
                 </div>
             </nav>
             <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
@@ -105,38 +116,48 @@
 
                     <!-- Contact Form -->
                     <div class="contact-form-wrapper" id="form-wrapper">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form"
-                            id="main-contact-form">
-                            <!-- Web3Forms Integration -->
-                            <input type="hidden" name="access_key" value="1b08c22d-5857-4b8c-8a50-6b41b44a6fc1">
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="form-title-container">
+                            <h3 class="form-title" id="contact-form-title">Send a message</h3>
+                            <p class="form-subtitle" id="contact-form-subtitle">Fill in the form below to request a
+                                quote or discuss a potential collaboration.</p>
+                        </div>
+                        <div>
+                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form"
+                                id="main-contact-form">
+                                <!-- Web3Forms Integration -->
+                                <input type="hidden" name="access_key" value="1b08c22d-5857-4b8c-8a50-6b41b44a6fc1">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="form-name">Full Name</label>
-                                    <input type="text" id="form-name" name="name"
-                                        placeholder="Please type your name here" required>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="form-name">Full Name</label>
+                                        <input type="text" id="form-name" name="name"
+                                            placeholder="Please type your name here" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email">Email Address</label>
+                                        <input type="email" id="form-email" name="email"
+                                            placeholder="Please enter your email address" required>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="form-email">Email Address</label>
-                                    <input type="email" id="form-email" name="email"
-                                        placeholder="Please enter your email address" required>
+                                    <label for="form-subject">Requested Service</label>
+                                    <select id="form-subject" name="subject">
+                                        <option value="translation">Translation &amp; Localization</option>
+                                        <option value="proofreading">MTPE or Proofreading</option>
+                                        <option value="transcription">Audiovisual Transcription</option>
+                                        <option value="other">Other collaboration request</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-subject">Subject</label>
-                                <input type="text" id="form-subject" name="subject"
-                                    placeholder="Project Inquiry / Localization Request" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-message">Message</label>
-                                <textarea id="form-message" name="message" rows="6"
-                                    placeholder="Describe your translation or localization requirements..."
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-button">Send
-                                Message</button>
-                        </form>
+                                <div class="form-group">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" name="message" rows="6"
+                                        placeholder="Please describe your service requirements..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block" id="form-submit-button">Send
+                                    Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,49 +171,42 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Translation & Localization</a></li>
-                        <li><a href="services.html">Medical & Life Sciences</a></li>
-                        <li><a href="services.html">iGaming & Promotional</a></li>
-                        <li><a href="services.html">AI Training & Annotation</a></li>
+                        <li><a href="services.html">Translation &amp; Localization</a></li>
+                        <li><a href="services.html">Medical &amp; Life Sciences</a></li>
+                        <li><a href="services.html">iGaming &amp; Promotional</a></li>
+                        <li><a href="services.html">AI Training &amp; Annotation</a></li>
                         <li><a href="services.html">Audiovisual Transcription</a></li>
-                        <li><a href="services.html">Language Teaching</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Tools</h4>
                     <ul>
-                        <li><a href="tools.html">Phrase TMS</a></li>
-                        <li><a href="tools.html">memoQ</a></li>
-                        <li><a href="tools.html">Smartcat</a></li>
-                        <li><a href="tools.html">XTM Cloud & Xbench</a></li>
-                        <li><a href="tools.html">Web & OS Design</a></li>
+                        <li><a href="tools.html">CAT Tools</a></li>
+                        <li><a href="tools.html">AI Tools</a></li>
+                        <li><a href="tools.html">Productivity</a></li>
+                        <li><a href="tools.html">Other tools</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Releases</h4>
                     <ul>
-                        <li><a href="releases.html">Translation Trends</a></li>
-                        <li><a href="releases.html">Localization Insights</a></li>
-                        <li><a href="releases.html">Industry Evolution</a></li>
+                        <li><a href="releases.html">My Releases</a></li>
+                        <li><a href="releases.html">English Articles</a></li>
+                        <li><a href="releases.html">French Articles</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="about.html">Biography</a></li>
-                        <li><a href="about.html">Languages Grid</a></li>
-                        <li><a href="about.html">Education Timeline</a></li>
+                        <li><a href="about.html">Who Am I?</a></li>
+                        <li><a href="about.html">Languages &amp; Education</a></li>
                         <li><a href="about.html">Volunteer Work</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="contact.html">Get in Touch</a></li>
-                        <li><a href="mailto:devaleuridzala@gmail.com">Send an Email</a></li>
-                        <li><a href="https://www.linkedin.com/in/promy-de-valeur-idzala-a36a29182/" target="_blank"
-                                rel="noopener">Connect via LinkedIn</a></li>
-                        <li><a href="tel:+242069289768">Call Phone Line</a></li>
+                        <li><a href="contact.html">Contact me</a></li>
                     </ul>
                 </div>
             </div>
